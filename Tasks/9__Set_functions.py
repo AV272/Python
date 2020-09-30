@@ -29,3 +29,14 @@ for i in range(N):
         s.discard(int(command[1]))
 
 print(sum(s))
+
+'''
+Функция A.union(B) объединяет два множества в одно.
+'''
+n = int(input())
+eng = set(map(int,input().split()))
+N = int(input())
+french = set(map(int,input().split()))
+
+s = eng.union(french)
+print(len(s))
