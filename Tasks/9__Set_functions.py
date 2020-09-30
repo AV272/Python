@@ -40,3 +40,14 @@ french = set(map(int,input().split()))
 
 s = eng.union(french)
 print(len(s))
+
+'''
+Функция A.intersection(B) возвращает пересечение двух множеств
+'''
+n = int(input())
+eng = set(map(int,input().split()))
+N = int(input())
+french = set(map(int,input().split()))
+
+s = eng.intersection(french)
+print(len(s))
