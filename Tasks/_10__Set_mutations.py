@@ -28,5 +28,5 @@ A = set(map(int,input().split()))
 nn = int(input())
 for i in range(nn):
     com = input().split()
-    eval('A.'+com[0]+'(set(map(int,input().split())))')
+    eval('A.'+com[0]+'(set(map(int,input().split())))') # Функция eval() воспринимает строку как команду
 print(sum(A))
