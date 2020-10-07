@@ -7,6 +7,15 @@ sort
 
 Задача:
 Считать введеные команды и выполнить их 
+
+Consider a list (list = []). You can perform the following commands:
+  1. insert(position,element): Insert integer elem. at position pos.
+  2. print(list): Print the list.
+  3. remove(element): Delete the first occurrence of integer elem.
+  4. append(element): Insert integer element at the end of the list.
+  5. sort(): Sort the list.
+  6. pop(): Pop(delete) the last element from the list.
+  7. reverse(): Reverse the list.
 '''
 
 
