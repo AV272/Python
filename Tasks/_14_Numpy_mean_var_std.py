@@ -24,11 +24,22 @@ print numpy.std(my_array)                   #Output : 1.11803398875
 # Скалярное произведение (dot product) == sum(x_i*y_i). Для матриц это произведение.
 A = numpy.array([ 1, 2 ])
 B = numpy.array([ 3, 4 ])
-
 print numpy.dot(A, B)       #Output : 11
 
 # Векторное произведение (косое произведение(псевдоскаляр)) (cross product) == x_1*y_2 - y_1*x_2
 print numpy.cross(A, B)     #Output : -2
+
+# Внутреннее произведение (inner product): обобщение скалярного произведения на случай предгильбертовых пространств.
+# Обладает стандартными свойствами скалярного произведения - линейность, эрмитовость, положительно определено.
+# Для векторов это обычное скалярное произведение: sum(x_i*y_i)
+A = numpy.array([0, 1])
+B = numpy.array([3, 4])
+
+print numpy.inner(A, B)     #Output : 4
+
+#  Тензорное произведение (outer product): возвращает матрицу с элементами ij = x_i*y_j
+print numpy.outer(A, B)     #Output : [[0 0]
+                            #          [3 4]]
 
 Enter:
 4 2 # dimentions
