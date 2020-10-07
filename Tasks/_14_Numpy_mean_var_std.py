@@ -21,6 +21,15 @@ print numpy.std(my_array, axis = 1)         #Output : [ 0.5  0.5]
 print numpy.std(my_array, axis = None)      #Output : 1.11803398875
 print numpy.std(my_array)                   #Output : 1.11803398875
 
+# Скалярное произведение (dot product) == sum(x_i*y_i). Для матриц это произведение.
+A = numpy.array([ 1, 2 ])
+B = numpy.array([ 3, 4 ])
+
+print numpy.dot(A, B)       #Output : 11
+
+# Векторное произведение (косое произведение(псевдоскаляр)) (cross product) == x_1*y_2 - y_1*x_2
+print numpy.cross(A, B)     #Output : -2
+
 Enter:
 4 2 # dimentions
 1 2
