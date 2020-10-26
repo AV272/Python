@@ -69,3 +69,17 @@ l = input().split() # Создаем лист из строк
 # i2==i2[::-1] работает только со строками, т.к. строка интерпритируется как лист
 print(all([int(i)>0 for i in l]) and any([i2==i2[::-1] for i2 in l]))
 
+#############################
+# Sorting (input: Sorting1234; output: ginortS1324)
+s = input()
+low = sorted([i for i in s if i.islower()]) # выбираем из строки буквы нижнего регистра
+up = sorted([i for i in s if i.isupper()]) # выбираем буквы верхнего регистра
+dig = sorted([i for i in s if i.isdigit()]) # числа
+even = []
+odd = []
+for i in dig:
+    if int(i)%2 ==0:
+        even.append(i)
+    else:
+        odd.append(i)
+print(''.join(low + up + odd +even))
