@@ -13,6 +13,19 @@
 >>> 
 >>> print zip(*X)
 [(1, 6, 7), (2, 5, 8), (3, 4, 9)]
+
+##########################
+# any() and all() functions
+
+>>> any([1>0,1==0,1<0])
+True
+>>> any([1<0,2<1,3<2])
+False
+
+>>> all(['a'<'b','b'<'c'])
+True
+>>> all(['a'<'b','c'<'b'])
+False
 '''
 
 stud, subj = map(int,input().split())
@@ -46,3 +59,13 @@ if __name__ == '__main__':
     arr.sort(key= lambda x: x[k])
     for i in arr:
         print(*i, sep=' ')
+        
+        
+#############################
+# Any and all
+
+n = int(input())
+l = input().split() # Создаем лист из строк
+# i2==i2[::-1] работает только со строками, т.к. строка интерпритируется как лист
+print(all([int(i)>0 for i in l]) and any([i2==i2[::-1] for i2 in l]))
+
